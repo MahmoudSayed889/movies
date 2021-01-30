@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <title>Movies</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+
+
+    </head>
+    <body>
+    
+        <div id="loadingScreen" class=" position-absolute bg-dark justify-content-center align-items-center">
+            <div class="sk-circle">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+              </div>
+        </div>
+
+
+    
+
+
+        <div class=" nav-bar d-flex vh-100 position-fixed text-white">
+
+            <div class=" nav-body py-4 pr-3 pl-4 d-flex flex-column justify-content-between">
+                <div id="apiLinks" class=" d-flex flex-column h-50 position-relative overflow-hidden">
+                    <a id="nowplaying" class=" mb-4" href="#">Now playing</a>
+                    <a id="popular" class=" mb-4" href="#">Popular</a>
+                    <a id="topRated" class=" mb-4" href="#">Top Rated</a>
+                    <a id="trending" class=" mb-4" href="#">Trending</a>
+                    <a id="upComing" class=" mb-4" href="#">Upcoming</a>
+                    <a id="btnContactUs" class="" href="#contactUs">Contact Us</a>
+                </div>
+                <div class="">
+                    <div class=" p-2 pb-3 social">
+                        <a class=" p-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class=" p-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class=" p-2 " href="#"><i class="fas fa-globe"></i></a>
+                    </div>
+                    <div >
+                        <p>Copyright Â© 2019 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" nav-head bg-white py-4 d-flex flex-column justify-content-between align-items-center">
+                <img class="navbar-logo w-50" src="images/logo.png" alt="">
+                <i id="openNav" class="fa fa-align-justify d-flex"></i>
+                <i id="closeNav" class="fa fa-align-justify fa-times d-none"></i>
+                <div class=" d-flex flex-column ">
+                    <i class="fas fa-globe pb-3"></i>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container py-5 mt-5 ">
+            <div class="row move-input-box m-auto">
+                <div class=" col-md-6">
+                    <div class="form-group position-relative">
+                        <input id="inputGetMovieWorld" class="move-input form-control bg-transparent border-0" type="text" placeholder="">
+                        <div id="textGetMovieWorld" class=" text-muted d-flex justify-content-center align-items-center position-absolute">
+                            <span>get movies by world</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6">
+                    <div class="form-group position-relative">
+                        <input id="searchInput" class="move-input form-control bg-transparent border-0" type="text" placeholder="">
+                        <div id="textSearch" class=" text-muted d-flex justify-content-center align-items-center position-absolute">
+                            <span>search</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-5">
+            <div class="row" id="myMovies">
+                
+            </div>
+            <div class="row" id="myMovies1">
+                
+            </div>
+        </div>
+
+
+        <section id="contactUs" class=" pb-5">
+            <div class="container w-75">
+                <h2 class=" text-white">ContactUs...</h2>
+                <div class="row pt-5">
+                    <div class=" col-md-6">
+                        <div class="form-group">
+                            <input id="nameInput" class="nameInputPlaceholder move-input form-control bg-transparent border-0 text-center" type="text" placeholder="Enter Your Name">
+                            <div id="nameAlert" class=" d-none alert-danger rounded-sm">
+                                <p class=" pt-3 pl-3">Your Name is not valid</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-6">
+                        <div class="form-group mb-2">
+                            <input id="emailInput" class="move-input  form-control bg-transparent border-0 text-center" type="text" placeholder="Enter Email">
+                            <div id="emailAlert" class=" d-none alert-danger rounded-sm">
+                                <p class=" pt-3 pl-3">entre valid email</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-6">
+                        <div class="form-group">
+                            <input id="phoneInput" class="move-input form-control bg-transparent border-0 text-center" type="text" placeholder="Enter phone">
+                            <div id="phoneAlert" class=" d-none alert-danger rounded-sm">
+                                <p class=" pt-3 pl-3">entre valid phone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-6">
+                        <div class="form-group">
+                            <input id="ageInput" class="move-input form-control bg-transparent border-0 text-center" type="text" placeholder="Enter Age">
+                            <div id="ageAlert" class=" d-none alert-danger rounded-sm">
+                                <p class=" pt-3 pl-3">entre valid Age</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-6">
+                        <div class="form-group">
+                            <input id="passwordInput" class="move-input form-control bg-transparent border-0 text-center" type="password" placeholder="Enter Password">
+                            <div id="passwordAlert" class=" d-none alert-danger rounded-sm">
+                                <p class=" pt-3 pl-3">entre valid password *Minimum eight characters, at least one letter and one number:*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-6">
+                        <div class="form-group">
+                            <input id="rePasswordInput" class="move-input form-control bg-transparent border-0 text-center" type="password" placeholder="Enter RePassword">
+                            <div id="rePasswordAlert" class=" d-none alert-danger rounded-sm">
+                                <p class=" pt-3 pl-3">entre valid Repassword</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class=" w-25 position-relative">
+                    <button id="btnSubmit" class=" btn btn-outline-danger disabled">Submit</button>
+                    <div id="divDisabled"></div>
+                </div>
+            </div>
+        </section>
+
+    
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
