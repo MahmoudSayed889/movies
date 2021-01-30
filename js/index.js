@@ -491,12 +491,12 @@ for(let i=0 ; i<inputs.length ; i++)
 let openNav = document.getElementById("openNav");
 let closeNav = document.getElementById("closeNav");
 let bodyWidth = $(".nav-body").innerWidth();
-$("#nowplaying").css({top: '100%' , transition: 'all .5s .6s'} , 0);
-$("#popular").css({top: '100%' , transition: 'all .5s .5s'} , 0);
-$("#topRated").css({top: '100%' , transition: 'all .5s .4s'} , 0);
-$("#trending").css({top: '100%' , transition: 'all .5s .3s'} , 0);
-$("#upComing").css({top: '100%' , transition: 'all .5s .2s'} , 0);
-$("#btnContactUs").css({top: '100%' , transition: 'all .5s .1s'} , 0);
+$("#nowplaying").css({top: '100%' , transition: 'top .5s .6s'} , 0);
+$("#popular").css({top: '100%' , transition: 'top .5s .5s'} , 0);
+$("#topRated").css({top: '100%' , transition: 'top .5s .4s'} , 0);
+$("#trending").css({top: '100%' , transition: 'top .5s .3s'} , 0);
+$("#upComing").css({top: '100%' , transition: 'top .5s .2s'} , 0);
+$("#btnContactUs").css({top: '100%' , transition: 'top .5s .1s'} , 0);
 
 $(".nav-bar").animate({left:`-${bodyWidth}`} ,0);
 
@@ -509,12 +509,12 @@ $("#openNav").click( function(){
     closeNav.classList.replace("d-none" , "d-flex");
 
 
-    $("#nowplaying").css({top: '0' , transition: 'all .5s .4s'} , 1000);
-    $("#popular").css({top: '15%' , transition: 'all .5s .5s'} , 1000);
-    $("#topRated").css({top: '30%' , transition: 'all .5s .6s'} , 1000);
-    $("#trending").css({top: '47%' , transition: 'all .5s .7s'} , 1000);
-    $("#upComing").css({top: '65%' , transition: 'all .5s .8s'} , 1000);
-    $("#btnContactUs").css({top: '85%' , transition: 'all .5s .9s'} , 1000);
+    $("#nowplaying").css({top: '0' , transition: 'top .5s .4s'} , 1000);
+    $("#popular").css({top: '15%' , transition: 'top .5s .5s'} , 1000);
+    $("#topRated").css({top: '30%' , transition: 'top .5s .6s'} , 1000);
+    $("#trending").css({top: '47%' , transition: 'top .5s .7s'} , 1000);
+    $("#upComing").css({top: '65%' , transition: 'top .5s .8s'} , 1000);
+    $("#btnContactUs").css({top: '85%' , transition: 'top .5s .9s'} , 1000);
     
     
 });
@@ -526,12 +526,12 @@ $("#closeNav").click( function(){
     openNav.classList.replace("d-none" , "d-flex");
     closeNav.classList.replace("d-flex" , "d-none");
 
-    $("#nowplaying").css({top: '100%' , transition: 'all .5s .5s'} , 500);
-    $("#popular").css({top: '100%' , transition: 'all .5s .4s'} , 500);
-    $("#topRated").css({top: '100%' , transition: 'all .5s .3s'} , 500);
-    $("#trending").css({top: '100%' , transition: 'all .5s .2s'} , 500);
-    $("#upComing").css({top: '100%' , transition: 'all .5s .1s'} , 500);
-    $("#btnContactUs").css({top: '100%' , transition: 'all .5s .0s'} , 500);
+    $("#nowplaying").css({top: '100%' , transition: 'top .5s .5s'} , 500);
+    $("#popular").css({top: '100%' , transition: 'top .5s .4s'} , 500);
+    $("#topRated").css({top: '100%' , transition: 'top .5s .3s'} , 500);
+    $("#trending").css({top: '100%' , transition: 'top .5s .2s'} , 500);
+    $("#upComing").css({top: '100%' , transition: 'top .5s .1s'} , 500);
+    $("#btnContactUs").css({top: '100%' , transition: 'top .5s .0s'} , 500);
 
 });
 
