@@ -582,7 +582,7 @@ $(searchInput).keyup( function(){
 
 $(document).ready( function(){
 
-    $("#loadingScreen").fadeToggle(800 , function(){
+    $("#loadingScreen").fadeToggle(1000 , function(){
         $("body").css("overflow" , "auto");
     });
 });
