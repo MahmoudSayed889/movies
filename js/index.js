@@ -1,5 +1,7 @@
 
 
+$(document).ready( function(){
+
 let nowPlaying = [];
 let popular = [];
 let topRated = [];
@@ -580,7 +582,7 @@ $(searchInput).keyup( function(){
 });
 
 
-$(document).ready( function(){
+
 
     $("#loadingScreen").fadeToggle(1000 , function(){
         $("body").css("overflow" , "auto");
