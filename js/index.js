@@ -1,6 +1,6 @@
 
 
-$(document).ready( function(){
+
 
 let nowPlaying = [];
 let popular = [];
@@ -580,19 +580,4 @@ $(searchInput).keyup( function(){
         textSearch.classList.replace("d-flex" , "d-none");
     }
 });
-
-
-
-
-    $("#loadingScreen").fadeToggle(1000 , function(){
-        $("body").css("overflow" , "auto");
-    });
-});
-
-
-
-
-
-
-
 
