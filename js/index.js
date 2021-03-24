@@ -500,7 +500,7 @@ $("#trending").css({top: '100%' , transition: 'top .5s .3s'} , 0);
 $("#upComing").css({top: '100%' , transition: 'top .5s .2s'} , 0);
 $("#btnContactUs").css({top: '100%' , transition: 'top .5s .1s'} , 0);
 
-// $(".nav-bar").animate({left:`-${bodyWidth}`} ,0);
+
 document.getElementById("navBar").style.left = -bodyWidth;
 
 $("#openNav").click( function(){
